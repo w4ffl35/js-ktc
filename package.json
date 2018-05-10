@@ -1,0 +1,23 @@
+{
+  "name": "js-ktc",
+  "version": "1.0.0",
+  "description": "Javascript Keyword Transposition Cipher",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdmnk/js-ktc.git"
+  },
+  "keywords": [
+    "cipher",
+    "cryptology"
+  ],
+  "author": "MDMNK",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mdmnk/js-ktc.git/issues"
+  },
+  "homepage": "https://github.com/mdmnk/js-ktc.git#readme"
+}
