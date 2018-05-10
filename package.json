@@ -1,6 +1,6 @@
 {
   "name": "js-ktc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Javascript Keyword Transposition Cipher",
   "main": "index.js",
   "scripts": {
