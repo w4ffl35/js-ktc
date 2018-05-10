@@ -21,3 +21,7 @@ The author is not a cryptographer and keyword transposition ciphers are extremel
 - **Initialize** `let ktc = new KTC.Cipher('secret')`
 - **Encrypt** `ktc.encrypt('CRYPTOLOGY')`
 - **Decrypt** `ktc.decrypt('JHQSU XFXBQ')`
+
+## Demo
+
+A demo using this package and React [can be found here](https://github.com/mdmnk/react-keyword-transposition-cipher).
