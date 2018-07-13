@@ -9,8 +9,6 @@ class Cipher {
         this.kwAlpha = '';
         this.encryptedAlpha = '';
         this.cipher = '';
-        this.width = 0;
-        this.height = 0;
         secret = this.parseString(secret);
         if (secret === '') return;
         this.distinct(secret, this, 'keyword');
