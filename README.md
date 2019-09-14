@@ -17,8 +17,8 @@ The author is not a cryptographer and keyword transposition ciphers are extremel
 
 ## Usage
 
-- **Require** `const KTC = require('js-keyword-transposition-cipher');`
-- **Initialize** `let ktc = new KTC.Cipher('secret')`
+- **Require** `const Cipher = require('js-keyword-transposition-cipher');`
+- **Initialize** `let ktc = new Cipher('secret')`
 - **Encrypt** `ktc.encrypt('CRYPTOLOGY')`
 - **Decrypt** `ktc.decrypt('JHQSU XFXBQ')`
 
