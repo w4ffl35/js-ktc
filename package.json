@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/mdmnk/js-ktc.git/issues"
   },
-  "homepage": "https://github.com/mdmnk/js-ktc.git#readme"
+  "homepage": "https://github.com/mdmnk/js-ktc.git#readme",
+  "devDependencies": {
+    "eslint": "^6.4.0"
+  }
 }
