@@ -15,4 +15,6 @@
 
 ## Demo
 
-A demo using this package and React [can be found here](https://github.com/VFNPN/react-keyword-transposition-cipher).
+~A demo using this package and React [can be found here](https://github.com/VFNPN/react-keyword-transposition-cipher).~
+
+Removing the demo due to security vulnerabilities in third-party packagaes.
