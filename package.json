@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/mdmnk/js-ktc.git#readme",
   "devDependencies": {
-    "eslint": "^6.8.0"
+    "eslint": "^7.27.0"
   }
 }
