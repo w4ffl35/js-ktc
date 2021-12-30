@@ -16,33 +16,19 @@ class Cipher {
     ]).join(''));
   }
 
-  _distinct(val) {
-    return val.split('').filter((item, i, self) => self.indexOf(item) === i).join('');
-  }
+  _distinct = (val) => val.split('').filter((item, i, self) => self.indexOf(item) === i).join('')
   
-  _max(i, max) {
-    return (i >= max) ? max - 1 : i;
-  }
+  _max = (i, max) => i >= max ? max - 1 : i
   
-  _flatIndex(i) {
-    return Math.floor(i / this.height) + (i % this.height) * this.width;
-  }
+  _flatIndex = (i) => Math.floor(i / this.height) + (i % this.height) * this.width
 
-  _crypt(s, alphaA, alphaB) {
-    return s.split('').map(lttr => alphaA[alphaB.indexOf(lttr)]).join('').replace(/.{5}/g, '$& ');
-  }
+  _crypt = (s, alphaA, alphaB) => s.split('').map(lttr => alphaA[alphaB.indexOf(lttr)]).join('').replace(/.{5}/g, '$& ')
   
-  _parse(s) {
-    return s.toUpperCase().replace(/ /g, '').replace(/[^a-zA-Z]/g, '');
-  }
+  _parse = (s) => s.toUpperCase().replace(/ /g, '').replace(/[^a-zA-Z]/g, '')
 
-  encrypt(s) {
-    return this._crypt(this._parse(s), this.encryptedAlpha, this.alpha);
-  }
+  encrypt = (s) => this._crypt(this._parse(s), this.encryptedAlpha, this.alpha)
   
-  decrypt(s) {
-    return this._crypt(this._parse(s), this.alpha, this.encryptedAlpha);
-  }
+  decrypt = (s) => this._crypt(this._parse(s), this.alpha, this.encryptedAlpha)
 }
 
 module.exports = Cipher;
