@@ -4,7 +4,7 @@
 
 ## Usage
 
-- **Require** `const Cipher = require('js-keyword-transposition-cipher');`
+- **Require** `const C = require('js-ktc');`
 - **Initialize** `let ktc = new Cipher('secret')`
 - **Encrypt** `ktc.encrypt('CRYPTOLOGY')`
 - **Decrypt** `ktc.decrypt('JHQSU XFXBQ')`
