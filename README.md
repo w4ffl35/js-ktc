@@ -13,6 +13,6 @@ An implementation of a basic keyword transposition cipher in Javascript with no 
 ## Usage
 
 - **Require** `const C = require('js-ktc');`
-- **Initialize** `let ktc = new Cipher('secret')`
+- **Initialize** `let ktc = new C('secret')`
 - **Encrypt** `ktc.encrypt('CRYPTOLOGY')`
 - **Decrypt** `ktc.decrypt('JHQSU XFXBQ')`
