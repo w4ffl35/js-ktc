@@ -1,5 +1,13 @@
 # Javascript Keyword Transposition Cipher
 
+An implementation of a basic keyword transposition cipher in Javascript with no dependencies.
+
+---
+
+## Installation
+
+`npm install js-ktc`
+
 ---
 
 ## Usage
