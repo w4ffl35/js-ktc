@@ -61,8 +61,6 @@ class Cipher {
         // 5 * 6 = 30 - 26 = 4
         // An array of length 4 is created, then joined together on a " " blank space character.
         // This is added to the kAlpha and stored as a class property.
-        console.log("this.width * this.height: " + this.width * this.height + " kalpha.length: " + kAlpha.length)
-        // console.log(kAlpha);
         const padding = Array(Math.abs(this.width * this.height - kAlpha.length) + 1).join(" ");
 
         this.kAlpha = kAlpha + padding;
