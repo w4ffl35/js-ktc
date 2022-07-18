@@ -1,34 +1,36 @@
-'use strict';
+const C = require('./cipher.min.js');
+const readline = require('readline');
 
-class Cipher {
-  constructor(secret)
-  {
-    this.alpha = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    const key = this._distinct(this._parse(secret));
-    const cipher = key.split('').sort();
-    this.trans = [];
-    this.width = cipher.length;
-    this.height = Math.ceil(this.alpha.length / cipher.length);
-    this.kAlpha = this._distinct(key + this.alpha) + Array(this.width * this.height - this.alpha.length).join(' ');
-    cipher.forEach((_, i) => this.trans[cipher.indexOf(this.kAlpha[i])] = cipher.indexOf(this.kAlpha[i]) - i);
-    this.encryptedAlpha = this._parse(this.kAlpha.split('').map((_, i) => this.kAlpha[
-      this._max(this._flatIndex(i) - this.trans[this._flatIndex(i) % this.width], this.kAlpha.length)
-    ]).join(''));
-  }
+class CipherRunner {
+    constructor() {
+        this.rl = readline.createInterface({
+            input: process.stdin,
+            output: process.stdout
+        })
+    }
 
-  _distinct = (val) => val.split('').filter((item, i, self) => self.indexOf(item) === i).join('')
-  
-  _max = (i, max) => i >= max ? max - 1 : i
-  
-  _flatIndex = (i) => Math.floor(i / this.height) + (i % this.height) * this.width
+    question = (message) => new Promise((resolve, _reject) => this.rl.question(message, (res) => resolve(res)))
 
-  _crypt = (s, alphaA, alphaB) => s.split('').map(lttr => alphaA[alphaB.indexOf(lttr)]).join('').replace(/.{5}/g, '$& ')
-  
-  _parse = (s) => s.toUpperCase().replace(/ /g, '').replace(/[^a-zA-Z]/g, '')
+    encryptMessage = (message) => new Promise((resolve) => resolve(this.cipher.encrypt(message)))
 
-  encrypt = (s) => this._crypt(this._parse(s), this.encryptedAlpha, this.alpha)
-  
-  decrypt = (s) => this._crypt(this._parse(s), this.alpha, this.encryptedAlpha)
+    decryptMessage = (message) => new Promise((resolve) => resolve(this.cipher.decrypt(message)))
+
+    doEncryption = () => {
+        this.question('Enter a message: ')
+            .then(message => this.encryptMessage(message))
+            .then(encrypted => {
+                console.log(encrypted);
+                return encrypted;
+            })
+            .then(this.decryptMessage)
+            .then(console.log)
+            .then(this.doEncryption)
+    }
+
+    run = () => this.question('Enter a secret: ')
+        .then(secret => this.cipher = new C(secret))
+        .then(this.doEncryption)
 }
 
-module.exports = Cipher;
+const cr = new CipherRunner();
+cr.run();
