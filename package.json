@@ -2,7 +2,7 @@
   "name": "js-ktc",
   "version": "1.0.4",
   "description": "Javascript Keyword Transposition Cipher",
-  "main": "index.js",
+  "main": "cipher.min.js",
   "scripts": {
     "test": "jest",
     "cipher": "node index.js",
