@@ -11,8 +11,11 @@
     "url": "git+https://github.com/w4ffl35/js-ktc.git"
   },
   "keywords": [
+    "keyword",
+    "transposition",
     "cipher",
-    "cryptology"
+    "cryptology",
+    "keyword transposition cipher"
   ],
   "author": "w4ffl35",
   "license": "MIT",
