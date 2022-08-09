@@ -2,6 +2,8 @@
 
 An implementation of a basic keyword transposition cipher in Javascript with no external dependencies.
 
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
+
 ## Installation
 
 `npm install js-ktc`
@@ -15,7 +17,7 @@ An implementation of a basic keyword transposition cipher in Javascript with no 
 - **Encrypt** `ktc.encrypt('CRYPTOLOGY')`
 - **Decrypt** `ktc.decrypt('JHQSU XFXBQ')`
 
-## Contributing [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
+## Contributing
 
 ---
 
