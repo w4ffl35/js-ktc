@@ -1,8 +1,8 @@
 # Javascript Keyword Transposition Cipher
 
-An implementation of a basic keyword transposition cipher in Javascript with no external dependencies.
-
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
+
+An implementation of a basic keyword transposition cipher in Javascript with no external dependencies.
 
 ## Installation
 
