@@ -1,6 +1,6 @@
 # Javascript Keyword Transposition Cipher
 
-[![Node.js Package](https://github.com/w4ffl35/js-ktc/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/w4ffl35/js-ktc/actions/workflows/npm-publish.yml) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
+[![Node.js Package](https://github.com/w4ffl35/js-ktc/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/w4ffl35/js-ktc/actions/workflows/npm-publish.yml) [![CodeQL](https://github.com/w4ffl35/js-ktc/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/w4ffl35/js-ktc/actions/workflows/codeql-analysis.yml) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
 
 An implementation of a basic keyword transposition cipher in Javascript with no external dependencies.
 
