@@ -2,7 +2,16 @@
 
 [![Node.js Package](https://github.com/w4ffl35/js-ktc/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/w4ffl35/js-ktc/actions/workflows/npm-publish.yml) [![CodeQL](https://github.com/w4ffl35/js-ktc/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/w4ffl35/js-ktc/actions/workflows/codeql-analysis.yml) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
 
-An implementation of a basic keyword transposition cipher in Javascript with no external dependencies.
+An implementation of a basic keyword transposition cipher in Javascript with zero dependencies.
+
+✅ Easy to use<br />
+✅ Extensible<br />
+✅ Test coverage<br />
+✅ Lots of comments (good for education)<br />
+✅ No bloat (zero dependencies)<br />
+✅ MIT license
+
+---
 
 ## Installation
 
@@ -17,16 +26,16 @@ An implementation of a basic keyword transposition cipher in Javascript with no 
 - **Encrypt** `ktc.encrypt('CRYPTOLOGY')`
 - **Decrypt** `ktc.decrypt('JHQSU XFXBQ')`
 
-## Contributing
+---
+
+## Limitations
+
+The basic implementation only works with A-Z though it can easily be extended to support other characters.
 
 ---
 
-Please use a separate branch for development with the following naming convention
+## Development
 
-`[type]-[name]`
+---
 
-***Examples:***
-
-- bugfix-some-unique-branch-name
-- hotfix-some-unique-branch-name
-- feature-some-unique-branch-name
+See the [CONTRIBUTING.md](CONTRIBUTING.md) file for instructions on how to contribute to this project.
