@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "cipher": "node index.js",
-    "build": "node_modules/jsmin/bin/jsmin -o cipher.min.js cipher.js"
+    "build": "npx jsmin -o cipher.min.js cipher.js"
   },
   "repository": {
     "type": "git",
@@ -26,7 +26,6 @@
   },
   "homepage": "https://github.com/w4ffl35/js-ktc.git#readme",
   "devDependencies": {
-    "jest": "^28.1.3",
-    "jsmin": "^1.0.1"
+    "jest": "^28.1.3"
   }
 }
