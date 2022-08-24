@@ -4,7 +4,19 @@
 
 An implementation of a basic keyword transposition cipher in Javascript with zero dependencies.
 
-![img_1.png](img_1.png)
+```
+$ node
+Welcome to Node.js v18.7.0.
+Type ".help" for more information.
+> const C = require('js-ktc');
+undefined
+> let ktc = new C('secret')
+undefined
+> ktc.encrypt('CRYPTOLOGY')
+'JHQSU XFXBQ '
+> ktc.decrypt('JHQSU XFXBQ')
+'CRYPT OLOGY '
+```
 
 ✅ Easy to use<br />
 ✅ Extensible<br />
