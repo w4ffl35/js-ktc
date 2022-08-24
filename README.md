@@ -9,9 +9,7 @@ $ node
 Welcome to Node.js v18.7.0.
 Type ".help" for more information.
 > const C = require('js-ktc');
-undefined
 > let ktc = new C('secret')
-undefined
 > ktc.encrypt('CRYPTOLOGY')
 'JHQSU XFXBQ '
 > ktc.decrypt('JHQSU XFXBQ')
