@@ -97,29 +97,69 @@ class Cipher {
         );
     }
 
+    /*
+    * Remove any repeated letters from the given string
+    * */
     _distinct = (val) => val.split('').filter((item, i, self) => self.indexOf(item) === i).join('')
 
-    // compare two integers and return max if i is greater
+    /*
+    * Compare two integers and return max if i is greater
+    * */
     _max = (i, max) => i > max ? max : i
 
-    // get index
+    /*
+    * Get an index based on the "height" and "width" of the cipher
+    * */
     _flatIndex = (i) => Math.floor(i / this.height) + ((i % this.height) * this.width)
 
+    /*
+    * Adds spaces to the given string
+    * */
     _addSpaces = (s) => this.props.addSpaces ? s.replace(/.{5}/g, '$& ') : s
 
+    /*
+    * Encrypts the given input string
+    * */
     _crypt = (s, alphaA, alphaB) => this._addSpaces(s.split('').map(lttr => alphaA[alphaB.indexOf(lttr)]).join(''))
 
+    /*
+    * Converts the given string to upper-case
+    * */
     _convertCase = (s) => this.props.toUpper ? s.toUpperCase() : s;
 
+    /*
+    * Strip any non-alpha characters from the input string
+    * */
     _stripCharacters = (s) => this.props.stripCharacters ? s.replace(/[^a-zA-Z]/g, '') : s
 
+    /*
+    * Strip any spaces from the input string
+    * */
     _stripSpaces = (s) => this.props.stripSpaces ? s.replace(/ /g, '') : s
 
-    // Convert the given string to uppercase, replace non-alpha characters.
-    _parse = (s) => this._stripCharacters(this._stripSpaces(this._convertCase(s)))
+    /*
+    * Convert the given string to uppercase, replace non-alpha characters.
+    * */
+    _parse = (s) => this._stripCharacters(
+        this._stripSpaces(
+            this._convertCase(s)
+        )
+    )
 
+    /*
+    * encrypt(string: s): string
+    *
+    * Given a plain text string, this function will return an encrypted version of it
+    * using the _crypt function.
+    * */
     encrypt = (s) => this._crypt(this._parse(s), this.encryptedAlpha, this.alpha)
 
+    /*
+    * decrypt(string: s): string
+    *
+    * Given an encrypted string, this function will return a decrypt it
+    * using the _crypt function.
+    * */
     decrypt = (s) => this._crypt(s, this.alpha, this.encryptedAlpha)
 }
 
