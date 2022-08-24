@@ -4,6 +4,8 @@
 
 An implementation of a basic keyword transposition cipher in Javascript with zero dependencies.
 
+![img_1.png](img_1.png)
+
 ✅ Easy to use<br />
 ✅ Extensible<br />
 ✅ Test coverage<br />
