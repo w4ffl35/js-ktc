@@ -5,15 +5,14 @@
 An implementation of a basic keyword transposition cipher in Javascript with zero dependencies.
 
 ```
-$ node
-Welcome to Node.js v18.7.0.
-Type ".help" for more information.
-> const C = require('js-ktc');
-> let ktc = new C('secret')
-> ktc.encrypt('CRYPTOLOGY')
-'JHQSU XFXBQ '
-> ktc.decrypt('JHQSU XFXBQ')
-'CRYPT OLOGY '
+const C = require('js-ktc');
+let ktc = new C('secret')
+
+ktc.encrypt('CRYPTOLOGY')
+// 'JHQSU XFXBQ '
+
+ktc.decrypt('JHQSU XFXBQ')
+// 'CRYPT OLOGY '
 ```
 
 ✅ Easy to use<br />
