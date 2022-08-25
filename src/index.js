@@ -1,4 +1,4 @@
-const C = require('./cipher.min.js');
+const C = require('../cipher.min.js');
 const readline = require('readline');
 
 class CipherRunner {

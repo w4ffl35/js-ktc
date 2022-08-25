@@ -1,12 +1,12 @@
 {
   "name": "js-ktc",
-  "version": "1.1.9",
+  "version": "1.1.10",
   "description": "Javascript Keyword Transposition Cipher",
   "main": "cipher.min.js",
   "scripts": {
     "test": "jest",
-    "cipher": "node index.js",
-    "build": "npx jsmin -o cipher.min.js cipher.js"
+    "cipher": "node src/index.js",
+    "build": "npx jsmin -o cipher.min.js src/cipher.js"
   },
   "repository": {
     "type": "git",

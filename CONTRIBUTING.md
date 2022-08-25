@@ -23,7 +23,7 @@
 
 `npm run test`
 
-![img.png](img.png)
+![img.png](resources/img.png)
 
 ---
 
@@ -31,7 +31,7 @@
 
 `npm run encrypt`
 
-![img_1.png](img_1.png)
+![img_1.png](resources/img_1.png)
 
 ---
 
@@ -49,4 +49,4 @@ Please keep the following in mind when developing:
 - Use no dependencies
 - Comment everything (see example)
 
-![img_3.png](img_3.png)
+![img_3.png](resources/img_3.png)
