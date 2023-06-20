@@ -212,7 +212,7 @@ class Cipher {
     /*
     * decrypt(string: s): string
     *
-    * Given an encrypted string, this function will return a decrypt it
+    * Given an encrypted string, this function will return a decrypted version of it
     * using the _crypt function.
     * */
     decrypt = (s) => this._crypt(s, this.alpha, this.encryptedAlpha)
