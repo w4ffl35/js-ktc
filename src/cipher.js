@@ -47,7 +47,7 @@ class Cipher {
         // Set the "height" of the cipher.
         //
         // Divide the length of the alphabet by the length of the cipher
-        // to find its width. In our example, the height is 4
+        // to find its height. In our example, the height is 4
         this.height = Math.floor(this.alpha.length / this.cipher.length)+1;
 
         // Create a "keyword" alphabet based on the original alphabet and the keyword
