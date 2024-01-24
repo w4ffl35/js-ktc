@@ -17,19 +17,26 @@ class CipherRunner {
 
     doEncryption = () => {
         this.question('Enter a message: ')
-            .then(message => this.encryptMessage(message))
-            .then(encrypted => {
-                console.log(encrypted);
-                return encrypted;
-            })
-            .then(this.decryptMessage)
-            .then(console.log)
-            .then(this.doEncryption)
+          .then(message => this.encryptMessage(message))
+          .then(encrypted => {
+              console.log(encrypted);
+              return encrypted;
+          })
+          .then(this.decryptMessage)
+          .then(console.log)
+          .then(() => this.question('Do you want to continue? (yes/no): '))
+          .then(answer => {
+              if (answer.toLowerCase() === 'yes') {
+                  this.doEncryption();
+              } else {
+                  this.rl.close();
+              }
+          });
     }
 
     run = () => this.question('Enter a secret: ')
-        .then(secret => this.cipher = new C(secret))
-        .then(this.doEncryption)
+      .then(secret => this.cipher = new C(secret))
+      .then(this.doEncryption)
 }
 
 const cr = new CipherRunner();
